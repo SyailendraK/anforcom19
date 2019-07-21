@@ -20,7 +20,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="300">
 
-    <nav id="navigasi" class="navbar fixed-top navbar-expand-md navbar-dark">
+    <nav id="navigasi" class="navbar fixed-top navbar-expand-md navbar-dark navbar-hide">
         <a class="navbar-brand pt-0" href="<?= base_url(); ?>"><img height="25" src="<?= base_url('assets/img/') ?>LOGO+NAME.png" alt=""></a>
         <button class="navbar-toggler" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation" type="button" data-target="#navbar" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>

@@ -47,13 +47,23 @@
 }
 
 /* =======================================index.php====================================================== */
+
+
 html {
     scroll-behavior: smooth;
 }
 
+.navbar {
+    transition: top 0.3s ease;
+}
+
+.navbar-hide {
+    top: -56px !important;
+}
+
 #intro .hero {
     background-color: var(--w1);
-    background-image: url("../img/backg.png");
+    background-image: url("../img/backg2.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
