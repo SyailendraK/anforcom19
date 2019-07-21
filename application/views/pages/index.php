@@ -1,7 +1,10 @@
 <section id="intro" class="shadow">
-
     <div class="hero d-flex align-items-center">
         <div id="particles-js" style="height:100vh;position: absolute !important;z-index: -1 !important;"></div>
+        <img class="paralax" id="big1" src="<?= base_url('assets/img/big1.png') ?>">
+        <img class="paralax" id="box" src="<?= base_url('assets/img/small_kiri_atas.png') ?>">
+        <img class="paralax" id="box2" src="<?= base_url('assets/img/small_kiri_bawah.png') ?>">
+        <img class="paralax" id="box3" src="<?= base_url('assets/img/small_kanan_atas.png') ?>">
         <div class="col-md-5" align="center">
             <img width="240" src="<?= base_url('assets/img/'); ?>LOGO.png">
             <div class="d-flex justify-content-center mt-3">

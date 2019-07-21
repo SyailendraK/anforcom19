@@ -28,6 +28,7 @@
     body p{font-size: 10pt;}
     #intro .hero {background-image: url()!important;}
     #particles-js{width: 100% !important;}
+    .paralax{display: none !important;}
 }
 /* ukuran mobile s*/
 @media only screen and (max-width: 361px) {
@@ -67,8 +68,35 @@ html {
     width: 70%;
 }
 
+.paralax{
+    position: absolute;
+    width: 98vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+/*-----------------------animation--------------------------------*/
+      #box,#box2,#box3{
+        position:absolute;
+        top: -10px;
+        animation:digoyangbang 2.6s cubic-bezier(0.02, 0.01, 0.31, 1) infinite;
+      }
+
+      #box2 {
+        animation:digoyangbang 3.3s cubic-bezier(0.02, 0.21, 0.71, 1) infinite !important;
+      }
+      #box3 {
+        animation:digoyangbang 4s cubic-bezier(0.1, 0.81, 0.91, 1) infinite !important;
+      }
+
+      @keyframes digoyangbang{
+        50% {transform:translateY(-25px);}
+      }
+/*---------------------------------------------------------*/
+
 #intro .hero {
-    background-image: url("../img/backg2.png");
+    background-image: url("../img/big2.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
