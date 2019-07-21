@@ -8,7 +8,6 @@
         </div>
     </div>
 </section>
-
 <section class="container" style="padding-top:0px;">
     <p>
         <?php echo $berita['content'] ?>
