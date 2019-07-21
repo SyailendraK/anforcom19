@@ -26,7 +26,7 @@
 /* ukuran mobile m & tablet*/
 @media only screen and (max-width: 768px) {
     body p{font-size: 10pt;}
-    #intro .hero {background: var(--w1)!important;}
+    #intro .hero {background-image: url()!important;}
 }
 /* ukuran mobile s*/
 @media only screen and (max-width: 361px) {
@@ -61,8 +61,11 @@ html {
     top: -56px !important;
 }
 
-#intro .hero {
+#particles-js{
     background-color: var(--w1);
+}
+
+#intro .hero {
     background-image: url("../img/backg2.png");
     background-attachment: fixed;
     background-size: cover;

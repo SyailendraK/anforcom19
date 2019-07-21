@@ -1,5 +1,5 @@
 <section >
-    <div id="particles-js" style="width: 97vw; position: absolute !important;z-index: -1 !important;margin-top: 10vh;"></div>
+    <div id="particles-js" style="width: 100vw; position: absolute !important;z-index: -1 !important;margin-top: 10vh;"></div>
     <div class="news-header" align="center" style="padding-top: 100px;">
         <h3><b><?php echo $berita['judul'] ?></b></h3>
         <small><?php echo $berita['created_at']?></small>
