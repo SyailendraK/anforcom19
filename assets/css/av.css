@@ -27,6 +27,7 @@
 @media only screen and (max-width: 768px) {
     body p{font-size: 10pt;}
     #intro .hero {background-image: url()!important;}
+    #particles-js{width: 100% !important;}
 }
 /* ukuran mobile s*/
 @media only screen and (max-width: 361px) {
@@ -63,6 +64,7 @@ html {
 
 #particles-js{
     background-color: var(--w1);
+    width: 70%;
 }
 
 #intro .hero {

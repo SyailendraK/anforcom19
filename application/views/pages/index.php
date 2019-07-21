@@ -1,7 +1,7 @@
 <section id="intro" class="shadow">
 
     <div class="hero d-flex align-items-center">
-        <div id="particles-js" style="height:100vh;width: 100vw; position: absolute !important;z-index: -1 !important;"></div>
+        <div id="particles-js" style="height:100vh;position: absolute !important;z-index: -1 !important;"></div>
         <div class="col-md-5" align="center">
             <img width="240" src="<?= base_url('assets/img/'); ?>LOGO.png">
             <div class="d-flex justify-content-center mt-3">
