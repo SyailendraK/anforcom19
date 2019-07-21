@@ -25,11 +25,20 @@
 });
 </script> -->
 <script type="text/javascript">
+  // script dinamik height
 	$(document).ready(function(){
 
       $('#particles-js').height($('#dinamik').height()+110);
-      console.log('masukk');
-});
+      // console.log('masukk');
+  });
+
+  $(document).ready(function(){
+    $('.nav-link').click(function(){
+      $('#navbar').removeClass("show");
+      $('#navbar').addClass("collapse");
+      // $('.navbar-toggler').addClass("collapsed");
+    })
+  })
 </script>
 
 <script>

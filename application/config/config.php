@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 // $config['base_url'] = '//anforcom.if.undip.ac.id';
 // $config['base_url'] = '//anforcom.com';
-$config['base_url'] = '//localhost/anforcom';
+$config['base_url'] = '//localhost/anforcom19';
 
 /*
 |--------------------------------------------------------------------------
