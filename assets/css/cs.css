@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLTStd-Medium.otf');
+}
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLT95Black.ttf');
+    font-weight: bold;
+}
+
+* {
+    font-family: 'avnir', serif;
+}
+
+#av {
+    height: 100vh;
+    background-image: url('../img/helmwkwk.png'), url('../img/ornament.png'), url('../img/ornament.png');
+    background-size: 230px, 200px, 200px;
+    background-repeat: no-repeat;
+    background-position-x: 80%, 101%, -1%;
+    background-position-y: 100%, -1%, 101%;
+    background-color: #09233e;
+}
+
+.modal-dialog {
+    max-width: 70%!important;
+}
+
+/* ukuran tablet kebawah */
+@media only screen and (max-width: 1024px) {
+    #av {
+        background-size: 130px, 130px, 130px;
+        background-position-x: 100%, 101%, -1%;
+    }
+ 
+    #logoav {
+        width: 200px;
+    }
+
+    h1 strong {
+        font-size: 2rem;
+    }
+
+    h4 strong{
+        font-size: 1.2rem;
+    }
+}
+

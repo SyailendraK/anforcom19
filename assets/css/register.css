@@ -1,0 +1,80 @@
+/*================== Register =============*/
+:root {
+  --w1: #1F2945;
+  --w2: #F3B100;
+  --w3: #234969;
+  --w4: #002E5D;
+  --w5: #03568A;
+  --w6: #DB9200;
+  --w7: #EBEBEB;
+  --w8: #101523;
+}
+
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLTStd-Medium.otf');
+}
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLT95Black.ttf');
+    font-weight: bold;
+}
+* {
+    font-family: 'avnir', serif;
+}
+
+/* ukuran mobile m & tablet*/
+@media only screen and (max-width: 768px) {
+  *, body p {
+    font-size: 9pt;
+  }
+  #register #form-regis form #sisikiri {
+    border-right: none!important;
+  }
+}
+/* =========================================================================== */
+#register{
+  background-color: #FAFAFA;
+  background-image: url("../img/forcomana.png");
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: right;
+  background-attachment: fixed;
+}
+#register #judulregis h2{
+    text-align: center;
+    font-weight: bold;
+    color: #03568A;
+    margin-bottom: 3%;
+}
+#register #form-regis{
+  margin-left: 10%;
+  width: 80%;
+  padding-bottom: 5%;
+}
+#register #form-regis form #sisikiri{
+  border-right: 1px solid #f0f0f0;
+  padding-right: 20px;
+}
+#register #form-regis form #sisikanan{
+  padding-left: 20px
+}
+#register #form-regis form #sisikanan hr{
+  border-top: 2px solid #03568A;
+  margin-top: 6%;
+  margin-bottom: 5%;
+}
+#register #form-regis form #sisikanan button{
+  padding: 2% 10% 2% 10%;
+  margin: 3% 0% 0% 35%;
+  background-color: #f6ba00;
+  color: #fafafa;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  transition: all 0.5s ease
+}
+#register #form-regis form #sisikanan button:hover{
+  background-color: transparent;
+  color: #f6ba00;
+  border-color: #f6ba00;
+}

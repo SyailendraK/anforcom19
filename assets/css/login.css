@@ -1,0 +1,92 @@
+/*================== LOGIN ===================*/
+:root {
+  --w1: #1F2945;
+  --w2: #F3B100;
+  --w3: #234969;
+  --w4: #002E5D;
+  --w5: #03568A;
+  --w6: #DB9200;
+  --w7: #EBEBEB;
+  --w8: #101523;
+}
+
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLTStd-Medium.otf');
+}
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLT95Black.ttf');
+    font-weight: bold;
+}
+* {
+    font-family: 'avnir', serif;
+}
+
+/* =============================================================================================== */
+
+#login-admin{
+  height: 100vh;
+  background-color: black;
+}
+
+#login{
+  height: 100vh;
+  background-color: var(--w1)!important;
+}
+
+#logo--av img{
+  transition: transform 0.5s;
+}
+
+#logo--av img:hover{
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(3px 1px 13px #FFF) ;
+  filter: drop-shadow(3px 1px 13px #fff) ;
+}
+
+#login-form{
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 13px 0px white;
+}
+
+#login .loginbtn{
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  border: 2px solid #03568A;
+  letter-spacing: 1px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #03568A;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#login .loginbtn:hover{
+  background-color: transparent;
+  color: #03568A;
+}
+#login .forgetbtn{
+  background-color:#f6ba00;
+  border: 2px solid #f6ba00;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s, color 0.3s;
+  color: #fff;
+  border-radius: 5px;
+}
+#login .forgetbtn:hover{
+  background-color: transparent;
+  color: #f6ba00;
+}
+#login .new-acc{
+  text-align: center;
+  font-size: 10pt;
+}
+#login #forget{
+  color: #f6ba00;
+}

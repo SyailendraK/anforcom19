@@ -1,0 +1,20 @@
+:root {
+    --w1: #1F2945;
+    --w2: #F3B100;
+    --w3: #234969;
+    --w4: #002E5D;
+    --w5: #03568A;
+    --w6: #DB9200;
+    --w7: #EBEBEB;
+    --w8: #101523;
+}
+
+#navigasi {
+    background-color: var(--w8);
+}
+#navigasi ul li a:hover{
+    color: var(--w2);
+}
+#navigasi ul li .active{
+    font-weight: bold;
+}

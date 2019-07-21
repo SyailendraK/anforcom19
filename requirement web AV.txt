@@ -1,0 +1,26 @@
+21:13 π12Q4 Bisa ceritain proses requiremennya gimana?
+21:20 π12Q4 Kaya pake framework apa? 
+            Laravelkah? CI-kah? 
+            Databasenya pake SQL atau dsb, pake wordpresskah atau dsb? 
+            Nge-hostnya beli dimana? Kemampuan bisa diakses brapa user sekaligus? 
+            Sekuritas data user terjamin tidak? Daan mungkin alasan" lain terkait biaya yg dikeluarkan, kaya semisal kalo outsourcingkan berarti harus bayar developernya. mungkin seperti itu ... 
+21:21 π12Q4 Selain itu fitur" di web apa aja? Selain login?
+21:24 π12Q4 Trus untuk proses pembayaran jika ikut acaranya kaya gmn? 
+            Konfirmasi via wa, atau line, atau gmn? 
+            Trus apa ada notifikasi balik jika udah bayar dsb
+21:27 π12Q4 Trus sebelum acara mulai, apa dilakukan proses testing? Kaya gimana proses testing webnya?
+
+Jadi setelah kebentuk panitia website kami dibagi jadi tim frontend, backend, sama admin.
+Untuk requirement kami kerjasama sama sie acara untuk konten yg mau diisi, sie publikasi untuk media & berita, dan sie dekdok yang desain webnya.
+website anforcom tahun ini buatnya mulai dari nol mulai dari h-2 bulan pendaftaran dan update2 setiap ada perubahan selama timeline berlangsung. 
+Banyak pake bootstrap untuk tampilannya, buat backend pake framework CI, sama database MySQL.
+Hosting di server FSM kurangtau bisa diakses brp user tp sempet ikut down satu fsm karena dari sananya.
+Data user (tim peserta lomba) aman karena cuma bisa diliat mereka dan sebagian data bisa diliat admin web buat keperluan panitia lomba.
+Fitur2 web selain daftar dan login sebagai peserta ada berita yg bisa di crud sm admin. Panel admin buat monitor tim peserta lomba bisa liat siapa aja yg daftar atau bayar sm verifikasi tim.
+Fitur lainnya ada panel tim. Untuk jadi peserta lomba langkahnya daftar di web > bayar via transfer ke panitia + konfirmasi > upload bukti pembayaran di panel tim.
+Jadi kalo upload bukti pembayarannya dan konfirmasi panitia via kontak bisa line, wa, dll, bakal diverifikasi manual sama admin, nanti di panel tim statusnya jadi terverifikasi.
+Kalo udah terverifikasi baru bisa kebuka fitur upload proposal & prototype untuk kepentingan lomba.
+Selain itu panel tim bisa untuk edit data tim. Buat pendaftaran seminarnya diluar sistem web.
+Buat testing sama anak2 web kaya nyoba daftar trs coba kesalahan2 typo atau formatnya. ga terstruktur sih jadi setiap nambah fitur langsung di test.
+Kalo ada salah bakal diupdate. Sebenernya proses requirement bener2 minim karena saat itu mendekati libur semester, selebihnya via online.
+Jadi secara keseluruhan kami panitia web improvisasi buat bikin sistem, konten, bahkan desainnya juga.

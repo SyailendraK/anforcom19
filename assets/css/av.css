@@ -1,0 +1,161 @@
+:root {
+    --w1: #1F2945;
+    --w2: #F3B100;
+    --w3: #234969;
+    --w4: #002E5D;
+    --w5: #03568A;
+    --w6: #DB9200;
+    --w7: #EBEBEB;
+    --w8: #101523;
+}
+
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLTStd-Medium.otf');
+}
+@font-face {
+	font-family: 'avnir';
+    src: url('../font/AvenirLT95Black.ttf');
+    font-weight: bold;
+}
+
+* {
+    font-family: 'avnir', serif;
+}
+
+/* ukuran mobile m & tablet*/
+@media only screen and (max-width: 768px) {
+    body p{font-size: 10pt;}
+    #intro .hero {background: var(--w1)!important;}
+}
+/* ukuran mobile s*/
+@media only screen and (max-width: 361px) {
+    body h1{font-size: 10vw;}
+    body h2{font-size: 9vw;}
+    body h3{font-size: 8vw;}
+    body h4{font-size: 7vw;}
+    body h5{font-size: 6vw;}
+    body p{font-size: 3.5vw;}
+    #intro img {width: 200px;}
+    #event img {width: 100px;}
+}
+
+.judul {
+    border-bottom: solid;
+    padding-bottom: 1%;
+    border-color: var(--w7);
+}
+
+/* =======================================index.php====================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+#intro .hero {
+    background-color: var(--w1);
+    background-image: url("../img/backg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#event {
+    background-image: url('../img/back1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#timeline {
+    background-color: var(--w1);
+    color: white;
+}
+#timeline li{
+    list-style: none!important;
+}
+#timeline ul li a {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin: 0px 5px 0px 5px;
+    line-height: 1.25;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#timeline ul li a:hover, #timeline ul .active {
+    color: var(--w2);
+    border-color: var(--w2);
+    text-decoration: none;
+}
+
+#about {
+    height: 400px;
+    background-image: url('../img/forcomana.png');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right;
+}
+
+#informasi .c1{
+    background-color: var(--w3);
+    color: white;
+}
+.c1,.c2{
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+.c1:hover,.c2:hover{
+    transform: translateY(-4px);
+    transition: 0.15s ease-in-out;
+}
+.c1:hover{
+    box-shadow: 0px 0px 20px var(--w3);
+}
+.c2:hover{
+    box-shadow: 0px 0px 20px var(--w6);
+}
+#informasi .c2{
+    background-color: var(--w6);
+    color: white;
+}
+#informasi .bc1{
+    color: var(--w6);
+}
+#informasi .bc2{
+    color: var(--w3);
+}
+.btn-default{
+    padding: 0px !important;
+}
+.card-title{
+    text-align: center;
+    cursor: pointer;
+}
+#contact {
+    background-color: var(--w7);
+}
+
+/* ============================================team.php================================================= */
+
+#teamlogin {
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+
+#uploadberkas .uploadberkas {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--w7);
+}
+
+#announcement {
+    background-image: url('../img/forcomana.png');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right;
+    background-attachment: fixed
+}
