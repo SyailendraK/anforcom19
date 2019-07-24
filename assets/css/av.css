@@ -143,6 +143,12 @@ html {
     background-position: right;
 }
 
+@media only screen and (min-width: 1920px){
+    #about{
+        background-size: 12%;
+    }
+}
+
 #informasi .c1{
     background-color: var(--w3);
     color: white;
