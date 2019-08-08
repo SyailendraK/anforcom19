@@ -12,6 +12,7 @@
 <script src="<?= base_url('assets/js/'); ?>jquery-3.4.1.min.js"></script>
 <script src="<?= base_url('assets/js/'); ?>popper.min.js"></script>
 <script src="<?= base_url('assets/js/'); ?>bootstrap.min.js"></script>
+<!-- <script src="<?= base_url('assets/js/'); ?>av.js"></script> -->
 <script src="<?= base_url('assets/js/'); ?>summernote.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="<?= base_url('assets/js/particles.js-master/'); ?>particles.js"></script>

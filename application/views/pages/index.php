@@ -195,7 +195,7 @@
     <div class="container-fluid d-flex justify-content-center shadow" style="background-color: black;">
         <div class="col-md-7 p-0 shadow-lg">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/4dldU7aRG4E?rel=0&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/YYNhPgzVDnM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </div>
