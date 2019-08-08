@@ -3,10 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'pages/home';
 
-// $route['register'] = 'peserta/register';
+$route['register'] = 'peserta/register';
 $route['login'] = 'peserta/login';
 $route['team'] = 'peserta/team';
 $route['forget'] = 'peserta/forget';
+$route['forget_password'] = 'peserta/forget_password';
+$route['resetpassword/(:any)'] = 'peserta/reset_password/$1';
+$route['update_password/(:any)'] = 'peserta/update_password/$1';
 
 $route['adminAV18'] = 'adminAV18/index';
 $route['news'] = 'berita/index_berita';

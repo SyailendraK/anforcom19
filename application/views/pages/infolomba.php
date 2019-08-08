@@ -12,13 +12,14 @@
       <div class="col-sm-7 p-1">
         <div class="rounded border shadow p-3">
           <h5>Tema :</h5><br>
-          <p><i>“Solution for Daily Millennial Problems</i>”</p><br>
+          <p>“<i>Be a Brilliant Generation Through Digital Tech Innovation </i>”</p><br>
           <h5>Sub Tema :</h5>
           <p>
-            a. <i>Smart Education</i><br>
-            b. <i>BizzTech</i><br>
+            a. <i>Fintech</i><br>
+            b. <i>Education</i><br>
             c. <i>Health Issues</i><br>
-            d. <i>Social Issues</i>
+            d. <i>Social Issues</i><br>
+            e. <i>Tourism</i>
           </p>
         </div>
       </div>
@@ -34,7 +35,7 @@
   </section>
 
 </section>
-  
+
 
 <section>
   <div class="container py-5">
@@ -44,11 +45,15 @@
         <img class="img-fluid" src="<?= base_url('assets/img/'); ?>pendaftaran.png" alt="" style="max-height: 100px;">
         <h2 class="judul"></h2>
         <ol class="text-left">
-          <li><p>Peserta Annual Informatics Competition (Anforcom) 2018 adalah mahasiswa aktif Program Diploma atau Sarjana S1.</p></li>
+          <li><p>Peserta Annual Informatics Competition (Anforcom) 2019 adalah mahasiswa aktif Program Diploma atau Sarjana S1.</p></li>
           <li><p>Peserta merupakan tim yang terdiri dari dua atau tiga orang pada universitas/ perguruan tinggi yang sama.</p></li>
-          <li><p>Mengisi formulir pendaftaran secara online pada website resmi Anforcom 2018 di http://anforcom.com/register mulai tanggal 29 Juli – 23 September 2018.</p></li>
-          <li><p>Melakukan pembayaran dengan biaya pendaftaran sebesar Rp 150.000/tim. Pembayaran dapat dilakukan paling lambat pada tanggal 23 September 2018. Melalui Rekening Bank Rakyat Indonesia (BRI) atas nama Clawdya Sari Purba Siboro dengan nomor rekening 7118 01 005563 53 0</p></li>
-          <li><p>Melakukan verifikasi pendaftaran melalui website <a href="<?php echo site_url()?>team" target="_blank">http://anforcom.com/team</a> dengan melampirkan scan bukti pembayaran dan Kartu Tanda Mahasiswa (KTM). Setelah semua data lengkap diterima panitia, setiap tim dapat melakukan login pada website <a href="<?php echo site_url()?>login" target="_blank">http://anforcom.com/login</a></p></li>
+          <li><p>Mengisi formulir pendaftaran secara online pada website resmi Anforcom 2019 di <a href="<?php echo site_url() ?>peserta/register" target="_blank">http://anforcom.com/peserta/register</a> mulai tanggal 8 Agustus – 15 September 2019.</p></li>
+		  <li>
+			TODO: nomor rekening dan nama pembayaran
+			TODO: update timeline
+		  </li>
+          <li><p>Melakukan pembayaran dengan biaya pendaftaran sebesar Rp 150.000/tim. Pembayaran dapat dilakukan paling lambat pada tanggal 15 September 2019. Melalui Rekening Bank Negara Indonesia (BNI) atas nama Anggita Muntaz Fathaya dengan nomor rekening 0843 005 873</p></li>
+          <li><p>Melakukan verifikasi pendaftaran melalui website <a href="<?php echo site_url()?>team" target="_blank">http://anforcom.com/team</a> dengan melampirkan scan bukti pembayaran dan Kartu Tanda Mahasiswa (KTM). Setelah semua data lengkap diterima panitia, setiap tim dapat meng-upload berkas proposal ke website <a href="<?php echo site_url()?>login" target="_blank">http://anforcom.com/login</a></p></li>
           <li><p>Mengenai keterangan yang kurang jelas terkait tata cara pendaftaran, verifikasi, maupun tahapan kompetisi, dapat langsung menghubungi contact person untuk keterangan lebih lanjut.</p></li>
         </ol>
       </div>
@@ -70,8 +75,8 @@
               <ol class="text-left">
                 <li><p>Setelah peserta melakukan pembayaran, peserta dapat mengunggah proposal pada form yang telah disediakan.</p></li>
                 <li><p>Peserta membuat proposal sesuai dengan tema dan ketentuan yang ada, lalu diunggah melalui akun peserta pada website <a href="<?php echo site_url()?>team/" target="_blank">http://anforcom.com/team/</a></p></li>
-                <li><p>Pengunggahan file proposal dilaksanakan mulai tanggal 29 Juli – 23 September 2018.</p></li>
-                <li><p>Tim yang telah dinyatakan lolos proposal akan diumumkan pada tanggal 27 September 2018.</p></li>
+                <li><p>Pengunggahan file proposal dilaksanakan mulai tanggal 8 Agustus – 22 September 2019.</p></li>
+                <li><p>Tim yang telah dinyatakan lolos proposal akan diumumkan pada tanggal 30 September 2019.</p></li>
                 <li><p>Pengumuman lolos proposal dapat dilihat pada website <a href="<?php echo site_url()?>announcement">http://anforcom.com/announcement.</a></p></li>
               </ol>
             </div>
@@ -79,9 +84,9 @@
               <h5>Prototype dan Dokumentasi</h5>
               <ol class="text-left">
                 <li><p>Peserta membuat prototype aplikasi dan dokumentasi dalam bentuk video sesuai dengan ketentuan yang ada, lalu diunggah dengan menggunakan akun peserta pada website <a href="<?php echo site_url()?>team/" target="_blank">http://anforcom.com/team/</a></p></li>
-                <li><p>Pengunggahan file dilaksanakan mulai tanggal 27 September – 7 Oktober 2018.</p></li>
-                <li><p>10 tim yang dinyatakan lolos ke babak final akan diumumkan pada tanggal 14 Oktober 2018.</p></li>
-                <li><p>Pengumuman lolos ke babak final dapat dilihat pada website <a href="<?php echo site_url()?>announcement">http://anforcom.com/announcement.</a></p></li>
+                <li><p>Pengunggahan <i>prototype</i> dan video dilaksanakan mulai tanggal 1 Oktober - 14 Oktober 2019.</p></li>
+                <li><p>10 tim yang dinyatakan lolos ke babak final akan diumumkan pada tanggal ??? Oktober 2019.</p></li>
+                <li><p>Pengumuman lolos ke babak final dapat dilihat pada website pada tanggal ??? <a href="<?php echo site_url()?>announcement">http://anforcom.com/announcement.</a></p></li>
               </ol>
             </div>
           </div>
@@ -94,7 +99,7 @@
           <img class="img-fluid" src="<?= base_url('assets/img/'); ?>final.png" alt="" style="max-height: 100px;">
           <h2 class="judul"><strong>Babak Final</strong></h2>
           <ol class="text-left">
-            <li><p>Babak final akan diselenggarakan pada tanggal 21 Oktober 2018 bertempat di Kampus Fakultas Sains dan Matematika Universitas Diponegoro.</p></li>
+            <li><p>Babak final akan diselenggarakan pada tanggal 19 Oktober 2019 bertempat di Kampus Fakultas Sains dan Matematika Universitas Diponegoro.</p></li>
             <li><p>Setiap tim mempresentasikan program yang telah dibuat sesuai dengan nomor urut yang ditentukan.</p></li>
           </ol>
         </div>
@@ -104,9 +109,9 @@
           <img class="img-fluid" src="<?= base_url('assets/img/'); ?>announcement.png" alt="" style="max-height: 100px;">
           <h2 class="judul"><strong>Pengumuman Pemenang & Seminar</strong></h2>
           <ol class="text-left">
-            <li><p>Seminar akan dilaksanakan pada tanggal 21 Oktober 2018 bertempat di Kampus Fakultas Sains dan Matematika Universitas Diponegoro.</p></li>
+            <li><p>Seminar akan dilaksanakan pada tanggal 19 Oktober 2019 bertempat di Kampus Fakultas Sains dan Matematika Universitas Diponegoro.</p></li>
             <li><p>Seminar diperuntukkan bagi peserta lomba Anforcom, selain itu juga dibuka untuk peserta umum.</p></li>
-            <li><p>Pengumuman akan dilaksanakan pada hari yang sama yaitu pada tanggal 21 Oktober 2018 bertempat di Aula Dekanat lantai 3, Fakultas Sains dan Matematika, Universitas Diponegoro.</p></li>
+            <li><p>Pengumuman akan dilaksanakan pada hari yang sama yaitu pada tanggal 19 Oktober 2019 bertempat di Aula Dekanat lantai 3, Fakultas Sains dan Matematika, Universitas Diponegoro.</p></li>
             <li><p>Keputusan juri dan panitia tidak dapat diganggu gugat.</p></li>
           </ol>
         </div>
@@ -121,19 +126,13 @@
             <div class="col-md-6">
               <ul class="text-left">
                 <li>
-                  <p>Kriteria Penilaian Proposal</p>
+                  <p>Kriteria Penilaian Tahap Penyisihan</p>
                   <ol type="a">
-                    <li><p>Inovasi (Bobot: 40%)<br>Penilaian proposal berdasarkan pada aspek inovasi dan kreativitas peserta terhadap ide pembuatan karya.</p></li>
-                    <li><p>Originalitas ide dan kesesuaian tema (Bobot: 25%)<br>Penilaian proposal berdasarkan keaslian ide dan kesesuaian tema yang telah di tentukan dalam pembuatan karya. </p></li>
-                    <li><p>Proses pengembangan yang baik (Bobot: 35%)<br>Penilaian proposal berdasarkan metodologi pengembangan perangkat lunak yang ditentukan dalam proses pembuatan karya.</p></li>
-                  </ol>
-                </li>
-                <li>
-                  <p>Kriteria Penilaian Aplikasi</p>
-                  <ol type="a">
-                    <li><p>Kesesuaian Aplikasi dengan Proposal (Bobot: 30%)<br>Penilaian karya berdasarkan kesesuaian aplikasi yang dibuat terhadap proposal yang diajukan.</p></li>
-                    <li><p>Desain User Interface/ User Experience (Bobot: 35%)<br>Penilaian karya berdasarkan keatraktifan dan kemudahan penggunaan fitur dalam aplikasi.</p></li>
-                    <li><p>Fungsionalitas (Bobot: 35%)<br>Penilaian karya berdasarkan pada manfaat, kegunaan, serta pengaruh bagi pengguna.</p></li>
+                    <li><p>Inovasi (Bobot: 25%)<br>Penilaian proposal berdasarkan pada aspek inovasi dan kreativitas peserta terhadap ide pembuatan karya.</p></li>
+                    <li><p>Originalitas ide dan kesesuaian tema (Bobot: 20%)<br>Penilaian proposal berdasarkan keaslian ide dan kesesuaian tema yang telah di tentukan dalam pembuatan karya. </p></li>
+                    <li><p>Desain User Interface & User Experience (Bobot: 20%)<br>Penilaian karya berdasarkan keatraktifan dan kemudahan penggunaan fitur dalam aplikasi.</p></li>
+                    <li><p>Fungsionalitas (Bobot: 25%)<br>Penilaian karya berdasarkan pada manfaat, kegunaan, serta pengaruh bagi pengguna.</p></li>
+                    <li><p>Sistematika Proposal (Bobot: 10%)<br>Penilaian Keruntutan, bahasa, dan kreativitas proposal sehingga mudah dibaca.</p></li>
                   </ol>
                 </li>
               </ul>
@@ -141,7 +140,7 @@
             <div class="col-md-6">
               <ul class="text-left">
                 <li>
-                  <p>Kriteria Penilaian Video</p>
+                  <p>Kriteria Penilaian Final</p>
                   <ol type="a">
                     <li><p>Konten (Bobot: 50%)<br>Penilaian video berdasarkan kelengkapan isi dan penjelasan fitur-fitur dari aplikasi.</p></li>
                     <li><p>Kreativitas (Bobot 30%)<br>Penilaian video berdasarkan cara penyampaian yang unik, menarik, dan efektif mengenai konten.</p></li>

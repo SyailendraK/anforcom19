@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Anforcom 2018</title>
+    <title>Anforcom 2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>login.css?d=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>bootstrap.css">
@@ -20,7 +20,7 @@
                 <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/img/'); ?>helmwkwk.png" alt="av" width="120px"></a>
             </div>
             <form action="<?= base_url(); ?>login" id="login-form" class="p-3" method="post" accept-charset="utf-8">
-                <input type="hidden" name="csrf_test_name" value="8f01bdfbe16aaeee77643c21e012d9d1">                                       
+                <input type="hidden" name="csrf_test_name" value="8f01bdfbe16aaeee77643c21e012d9d1">
                 <div class="form-group" align="left">
                     <label for="">Email : </label>
                     <input autofocus="" required="" class="form-control field-login" type="email" name="email" value="">

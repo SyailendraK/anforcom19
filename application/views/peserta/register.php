@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Anforcom 2018</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>register.css?d=<?php echo time(); ?>">
+    <title>Anforcom 2019</title>
+    <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>register2.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -45,16 +45,16 @@
 
     <section id="register">
       <div id="judulregis">
-        <h2 class="pt-3">Form Pendaftaran Mobile Apps Competition</h2>
+        <h2 class="pt-5">Form Pendaftaran Mobile Apps Competition</h2>
       </div>
 
       <div id="form-regis">
 
         <?php echo validation_errors(); ?>
 
-        <?php echo form_open_multipart('peserta/register_peserta'); ?>
-          <div class="row">
-            <div class="col-md-6" id="sisikiri">
+        <?php echo form_open_multipart('peserta/register_peserta', array('onsubmit' => 'return validation();')); ?>
+          <div class="row pt-3">
+            <div class="col-md-6" id="sisikiri" style="">
               <div class="form-group">
                 <label for="">Perguruan Tinggi *</label>
                 <input class="form-control" type="text" name="nama_pt" pattern="[a-zA-Z0-9\s]{3,30}" placeholder="Nama Perguruan Tinggi Anda" required>
@@ -62,6 +62,7 @@
               <div class="form-group">
                 <label for="">Nama Tim Anda *</label>
                 <input class="form-control" type="text" name="nama_tim" pattern="[a-zA-Z0-9]{3,30}" title="Huruf dan/atau Angka, 3 ~ 30 Karakter Tanpa Spasi" placeholder="Nama Tim Anda (Huruf dan/atau Angka, 3 ~ 30 Karakter)" required>
+                <span id='bantuan_nama_tim' style='display: none; color: red'>Team sudah Terdaftar</span>
               </div>
               <div class="form-group">
                 <label for="">Nama Ketua *</label>
@@ -70,6 +71,7 @@
               <div class="form-group">
                 <label for="">E-mail Ketua *</label>
                 <input class="form-control" type="email" name="email_ketua" placeholder="E-mail Aktif Ketua" required>
+                <span id='bantuan_email_ketua' style='display: none; color: red'>Email sudah Terdaftar</span>
               </div>
               <div class="form-group">
                 <label for="">Nomor Mahasiswa Ketua *</label>
@@ -86,9 +88,12 @@
               <div class="form-group">
                 <label for="">Ulang Kata Sandi *</label>
                 <input class="form-control" type="password" name="verif_pass" placeholder="********" required>
+                <span id='bantuan_password' style='display: none; color: red'>Kata sandi tidak sama</span>
               </div>
             </div>
+
             <div class="col-md-6" id="sisikanan">
+              <hr style="border-color: #F2B001;" id="border">
               <div class="form-group">
                 <label for="">Nama Anggota 1</label>
                 <input class="form-control" type="text" name="nama_anggota1" pattern="[a-zA-Z\s]{3,50}" required>
@@ -101,7 +106,7 @@
                 <label for="">Scan Kartu Tanda Mahasiswa Anggota 1 <small>.png/.jpg</small></label>
                 <input class="form-control-file" type="file" name="userfile2" accept=".png,.jpg" required>
               </div>
-              <hr>
+              <hr style="border-color: #F2B001;">
               <div class="form-group">
                 <label for="">Nama Anggota 2</label>
                 <input class="form-control" type="text" name="nama_anggota2" pattern="[a-zA-Z\s]{3,40}">
@@ -115,9 +120,11 @@
                 <input class="form-control-file" type="file" name="userfile3" accept=".png,.jpg">
               </div>
               <p><small>*) Wajib untuk diisi</small></p>
-              <button class="btn" type="submit">DAFTAR!</button>
+              <button class="btn d-flex justify-content-center mx-auto" type="submit">DAFTAR!</button>
+
             </div>
           </div>
         </form>
       </div>
     </section>
+

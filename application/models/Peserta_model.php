@@ -11,8 +11,23 @@
 
     public function get_peserta($id){
       $query = $this->db->get_where('peserta', array('id' => $id));
+
+      if ($query->num_rows() > 0){
+        return $query->row_array();
+      }
       
-      return $query->row_array();
+    }
+
+	public function get_by_email($email) {
+		$query = $this->db->get_where('peserta', ['email_ketua' => $email]);
+
+		return $query->first_row();
+	}
+
+    public function get_by_reset_token($token) {
+        $query = $this->db->get_where('peserta', ['password_reset_token' => $token]);
+
+        return $query->first_row();
     }
 
     public function create_peserta($ktm_ketua,$ktm_anggota1,$ktm_anggota2){
@@ -67,6 +82,31 @@
       } else{
         return false;
       }
+    }
+
+	public function create_password_reset_token($id)
+	{
+		$reset_token = bin2hex(random_bytes(20));
+		$expiration = new DateTime('+1 hour', new DateTimeZone('Asia/Jakarta'));
+
+		$data = [
+			'password_reset_token' => $reset_token,
+			'password_reset_expire' => $expiration->format('Y-m-d H:i:s')
+		];
+
+		$this->db->where('id', $id)
+			->update('peserta', $data);
+
+		return $reset_token;
+	}
+
+    public function change_password($id, $password)
+    {
+        $this->db->where('id', $id)->update('peserta', [
+            'password' => $password,
+            'password_reset_token' => null,
+            'password_reset_expire' => null,
+        ]);
     }
 
     public function upload_bukti($bukti){
@@ -144,5 +184,25 @@
     //   }
     // }
 
+    // Method untuk ajax
+    public function check_team_exists(){
+      //cek apakah method post untuk jaga-jaga aja biar yang mau bajak susah nyari bug mungkin berguna :v
+      if($_POST){
+        $nama_tim = $this->input->post('nama_tim');
+        $result = $this->db->get_where('peserta', "nama_tim='$nama_tim'");
+        if($result->num_rows() > 0) echo true;
+        else echo false;
+      }
+    }
+
+    public function check_email_exists(){
+      //cek apakah method post untuk jaga-jaga aja biar yang mau bajak susah nyari bug mungkin berguna :v
+      if($_POST){
+        $email_ketua = $this->input->post('email_ketua');
+        $result = $this->db->get_where('peserta', "email_ketua='$email_ketua'");
+        if($result->num_rows() > 0) echo true;
+        else echo false;
+      }
+    }
   }
 ?>

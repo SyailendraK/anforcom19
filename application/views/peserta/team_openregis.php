@@ -115,10 +115,10 @@
                     <div class="col-md-5">
                         <h3>Pembayaran Pendaftaran</h3>
                         <p>Sejumlah Rp 150.000 per tim <br>
-                          Rekening Bank Rakyat Indonesia (BRI) <br> <br>
-                          <b>7118 01 005563 53 0</b> <br>
-                          <b>a.n. Clawdya Sari Purba Siboro</b> <br> <br>
-                          Maksimal pembayaran 20 September 2018.
+                          Rekening Bank Negara Indonesia (BNI) <br> <br>
+                          <b>0843 005 873</b> <br>
+                          <b>a.n. Anggita Muntaz Fathaya</b> <br> <br>
+                          Maksimal pembayaran 15 September 2019.
                          </p>
                          <small>Silahkan hubungi Panitia untuk verifikasi jika belum bisa upload bukti pembayaran</small>
                     </div>

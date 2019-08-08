@@ -29,8 +29,8 @@
     #intro .hero {background-image: url()!important;}
     #particles-js{width: 100% !important;}
     .paralax{display: none !important;}
-    #event{
-        margin-top: 14%;
+    #deskripsi{
+        margin-bottom: 5vh !important;
     }
 }
 /* ukuran mobile s*/
@@ -52,6 +52,7 @@
 }
 
 /* =======================================index.php====================================================== */
+
 
 html {
     scroll-behavior: smooth;

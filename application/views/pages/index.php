@@ -19,10 +19,10 @@
 <section id="about">
     <div class="container py-5">
         <div class="row">
-            <div class="col-10 offset-md-1">
+            <div class="col-10 offset-md-1" id="deskripsi">
                 <h3><strong>About The Event</strong></h3>
                 <h5><strong>Annual Informatics Competition 2019</strong></h5><br>
-                <p>ANFORCOM adalah serangkaian event IT tahunan berskala nasional yang diselenggarakan oleh Himpunan Mahasiswa Informatika Universitas Diponegoro </p>
+                <p style="text-align: justify">Annual Informatics Competition (Anforcom) 2019 merupakan kompetisi skala nasional yang berfokus pada kemampuan peserta dalam pengembangan aplikasi berbasis mobile  yang diselenggarakan oleh Himpunan Mahasiswa Informatika Universitas Diponegoro. Anforcom pada tahun ini mengusung tema yaitu "Be a Brilliant Generation Through Digital Tech Innovation" dengan harapan mahasiswa Indonesia dapat membuat aplikasi se-kreatif dan se-inovatif mungkin yang dapat menciptakan generasi cemerlang untuk Indonesia di masa depan.</p>
             </div>
         </div>
     </div>
@@ -70,7 +70,7 @@
             <strong>Timeline</strong>
             <span><button class="btn btn-outline-warning btn-sm" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="lomba-collapse seminar-collapse"><i class="fa fa-refresh"></i></button></span>
         </h3>
-        <small>update : 20-09-18</small>
+        <small>update : 02-08-19</small>
         <div class="collapse show multi-collapse" id="lomba-collapse">
             <div id="timeline-lomba" class=" carousel slide container-fluid py-3" data-ride="false" align="center">
                 <h4><strong>Lomba</strong></h4>
@@ -80,36 +80,43 @@
                     <li><a href="#timeline-lomba" data-slide-to="2"><strong>3</strong></a></li>
                     <li><a href="#timeline-lomba" data-slide-to="3"><strong>4</strong></a></li>
                     <li><a href="#timeline-lomba" data-slide-to="4"><strong>5</strong></a></li>
+                    <li><a href="#timeline-lomba" data-slide-to="5"><strong>6</strong></a></li>
                 </ul>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
                             <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>pendaftaran.png" alt="">
-                            <p class="mx-3">Pendaftaran & verifikasi<br><i class="fa fa-calendar"></i><span><strong> 29 Juli - 23 September 2018</strong></span></p>
+                            <p class="mx-3">Pendaftaran & verifikasi<br><i class="fa fa-calendar"></i><span><strong> 8 Agustus - 15 September 2019</strong></span></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
                             <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>uploaddoc.png" alt="">
-                            <p class="mx-3">Pengunggahan proposal<br><i class="fa fa-calendar"></i><span><strong> 29 Juli - 23 September 2018</strong></span></p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
-                            <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>uploadapp.png" alt="">
-                            <p class="mx-3">Pengunggahan prototype dan video dokumentasi<br><i class="fa fa-calendar"></i><span><strong> 27 September - 7 Oktober 2018</strong></span></p>
+                            <p class="mx-3">Pengunggahan proposal<br><i class="fa fa-calendar"></i><span><strong> 8 Agustus - 22 September 2019</strong></span></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
                             <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>announcement.png" alt="">
-                            <p class="mx-3">Pengumuman final<br><i class="fa fa-calendar"></i><span><strong> 14 Oktober 2018</strong></span></p>
+                            <p class="mx-3">Pengumuman Lolos Proposal<br><i class="fa fa-calendar"></i><span><strong> 30 September 2019</strong></span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
+                            <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>uploadapp.png" alt="">
+                            <p class="mx-3">Pengunggahan prototype dan video dokumentasi<br><i class="fa fa-calendar"></i><span><strong> 1 Oktober - 14 Oktober 2019</strong></span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
+                            <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>announcement.png" alt="">
+                            <p class="mx-3">Pengumuman final<br><i class="fa fa-calendar"></i><span><strong> ???? </strong></span></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
                             <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>final.png" alt="">
-                            <p class="mx-3">Babak final<br><i class="fa fa-calendar"></i><span><strong> 21 Oktober 2018</strong></span></p>
+                            <p class="mx-3">Babak final<br><i class="fa fa-calendar"></i><span><strong> 19 Oktober 2019</strong></span></p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +154,7 @@
                     <div class="carousel-item">
                         <div class="d-block d-sm-flex align-items-center justify-content-center" align="center">
                             <img height="150" class="py-3 mx-3" src="<?= base_url('assets/img/'); ?>seminar.png" alt="">
-                            <p class="mx-3">Seminar<br><i class="fa fa-calendar"></i><span><strong> 21 Oktober 2018</strong></span></p>
+                            <p class="mx-3">Seminar<br><i class="fa fa-calendar"></i><span><strong> 19 Oktober 2019</strong></span></p>
                         </div>
                     </div>
                 </div>
@@ -224,8 +231,8 @@
                     Fakultas Sains dan Matematika, Universitas Diponegoro. Jl. Prof. Soedharto, S.H., Tembalang, Semarang 50275
                 </p>
                 <!-- <p><i class="fa fa-envelope"></i> info@anforcom.com</p> -->
-                <p><i class="fa fa-phone"></i> Ananda Vijaya 089 651 449 153</p>
-                <p><i class="fa fa-phone"></i> Ananda Vijaya 087 731 492 139</p>
+                <p><i class="fa fa-phone"></i> Prayoga Dwi Saputro 082 114 186 583</p>
+                <p><i class="fa fa-phone"></i> Agni Wiguna 082 134 229 518</p>
             </div>
             <div class="col-md-7">
                 <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.834139266948!2d110.440896!3d-7.048210999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInNTMuNiJTIDExMMKwMjYnMjcuMiJF!5e0!3m2!1sid!2sid!4v1438612753848" style="border:none"></iframe>

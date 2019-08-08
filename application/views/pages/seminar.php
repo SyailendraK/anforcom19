@@ -48,7 +48,7 @@
                     <li>
                         Waktu & Tempat
                         <p>
-                        📅 Minggu, 21 Oktober 2018. 08.30 WIB<br>
+                        📅 Minggu, 19 Oktober 2019. 08.30 WIB<br>
                         📍  Gd. Dekanat FSM lantai 3 Universitas Diponegoro
                         <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.834139266948!2d110.440896!3d-7.048210999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInNTMuNiJTIDExMMKwMjYnMjcuMiJF!5e0!3m2!1sid!2sid!4v1438612753848" style="border:none"></iframe>
                         </p>
@@ -73,8 +73,8 @@
                     <li>
                         Contact Person
                         <p>
-                            Emi Robiyati / 081286400997 <br>
-                            Dhiyaussalam / 08994776152
+                            Prayoga Dwi Saputro / 082114186583 <br>
+                            Agni Wiguna / 082134229518
                         </p>
                     </li>
                 </ol>
@@ -88,8 +88,8 @@
                 <h2 class="judul"></h2>
                 <ol class="text-left">
                     <li><p>Mengisi form dengan klik tombol DAFTAR diatas atau dari link bit.ly/SeminarAnforcom2018</p></li>
-                    <li><p>Melakukan pembayaran via rekening 7118 01 005563 53 0 a.n Clawdya Sari Purba Siboro</p></li>
-                    <li><p>Melakukan konfirmasi pembayaran ke cp kami 081286400997 a.n Emi Robiyati (mengirim foto struk bukti transfer)</p></li>
+                    <li><p>Melakukan pembayaran via rekening BNI 0843 005 873 a.n Anggita Muntaz Fathaya</p></li>
+                    <li><p>Melakukan konfirmasi pembayaran ke cp kami 082134229518 a.n Agni Wiguna (mengirim foto struk bukti transfer)</p></li>
                 </ol>
             </div>
         </div>

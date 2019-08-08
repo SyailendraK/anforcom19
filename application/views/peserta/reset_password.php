@@ -19,12 +19,16 @@
             <div id="logo--av">
                 <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/img/'); ?>helmwkwk.png" alt="av" width="120px"></a>
             </div>
-            <form action="<?= base_url(); ?>forget_password" id="login-form" class="p-3" method="post" accept-charset="utf-8">
+            <form action="<?= base_url(); ?>update_password/<?= $token ?>" id="login-form" class="p-3" method="post" accept-charset="utf-8">
                 <input type="hidden" name="csrf_test_name" value="">
-                <h4 class="text-center">Form Reset Password</h4>
+                <h4 class="text-center">Ubah password</h4>
                 <div class="form-group" align="left">
-                    <label for="">Silahkan masukkan email : </label>
-                    <input autofocus="" required="" class="form-control field-login" type="email" name="email" value="">
+                    <label for="">Silahkan masukkan password : </label>
+                    <input autofocus="" required="" class="form-control field-login" type="password" name="password" value="">
+                </div>
+                <div class="form-group" align="left">
+                    <label for="">Ulangi password : </label>
+                    <input autofocus="" required="" class="form-control field-login" type="password" name="password_confirmation" value="">
                 </div>
                 <button class="btn btn-success loginbtn" type="submit" name="button">OK</button>
             </form>

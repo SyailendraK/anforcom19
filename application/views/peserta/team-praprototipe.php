@@ -115,10 +115,10 @@
                     <div class="col-md-5">
                         <h3>Pembayaran Pendaftaran</h3>
                         <p>Sejumlah Rp 150.000 per tim <br>
-                          Rekening Bank Rakyat Indonesia (BRI) <br> <br>
-                          <b>7118 01 005563 53 0</b> <br>
-                          <b>a.n. Clawdya Sari Purba Siboro</b> <br> <br>
-                          Maksimal pembayaran 23 September 2018.
+                          Rekening Bank Negara Indonesia (BNI) <br> <br>
+                          <b>0843 005 873</b> <br>
+                          <b>a.n. Anggita Muntaz Fathaya</b> <br> <br>
+                          Maksimal pembayaran 15 September 2019.
                          </p>
                          <small>Silahkan hubungi Panitia untuk verifikasi jika belum bisa upload bukti pembayaran</small>
                     </div>
@@ -176,21 +176,8 @@
                             <?php endif ?>
                             <!-- 21,30,32,33,34,35,36,37,39,41,46,49 -->
                             <?php if(
-                                $_SESSION['user_id'] == 8 ||
-                                $_SESSION['user_id'] == 18 ||
-
-                                $_SESSION['user_id'] == 21 ||
-                                $_SESSION['user_id'] == 30 ||
-                                $_SESSION['user_id'] == 32 ||
-                                $_SESSION['user_id'] == 33 ||
-                                $_SESSION['user_id'] == 34 ||
-                                $_SESSION['user_id'] == 35 ||
-                                $_SESSION['user_id'] == 36 ||
-                                $_SESSION['user_id'] == 37 ||
-                                $_SESSION['user_id'] == 39 ||
-                                $_SESSION['user_id'] == 41 ||
-                                $_SESSION['user_id'] == 46 ||
-                                $_SESSION['user_id'] == 49 ) 
+                                $_SESSION['user_id'] == 999999 ||
+                                $_SESSION['user_id'] == 999998 ) 
                             : ?>
 
                                 <?php if($team['prototipe'] == NULL && $team['link_prototipe'] == NULL) : ?>
@@ -203,6 +190,12 @@
                                             <div class="form-group">
                                                 <label for="">Link Alternatif Berkas<br><small>awali dengan http://</small><span style="color:red">*</span></label>
                                                 <input class="form-control" type="url" name="link_prototipe" value="" placeholder="https://">
+                                            </div>
+                                            <input type="hidden" name="nama_timup" value="">
+                                            <small><i><span style="color:red;">*</span>) Jika ukuran prototype melebihi 25 MB silahkan upload di media penyimpanan online dan masukan link-nya di formulir yang disediakan</i></small>
+                                            <div class="form-group">
+                                                <label for="">Link Youtube<br><small>awali dengan http://</small><span style="color:red">*</span></label>
+                                                <input class="form-control" type="url" name="video" value="" placeholder="https://">
                                             </div>
                                             <input type="hidden" name="nama_timup" value="">
                                             <small><i><span style="color:red;">*</span>) Jika ukuran prototype melebihi 25 MB silahkan upload di media penyimpanan online dan masukan link-nya di formulir yang disediakan</i></small>
@@ -237,6 +230,11 @@
                                             <div class="form-group">
                                                 <label for="">Perbarui Link Alternatif Berkas <small>awali dengan http://</small><span style="color:red">*</span></label>
                                                 <input class="form-control" type="url" name="link_prototipe" value="<?php echo $team['link_prototipe']?>">
+                                            </div>
+                                            <i style="font-size:9pt;margin-left:2%;"><span style="color:red;">*</span>) Jika ukuran berkas melebihi 25 MB silahkan Uploadkan di media penyimpanan online dan masukan link-nya di form yang disediakan</i>
+                                            <div class="form-group">
+                                                <label for="">Perbarui Link Youtube <small>awali dengan http://</small><span style="color:red">*</span></label>
+                                                <input class="form-control" type="url" name="video" value="<?php echo $team['video']?>">
                                             </div>
                                             <i style="font-size:9pt;margin-left:2%;"><span style="color:red;">*</span>) Jika ukuran berkas melebihi 25 MB silahkan Uploadkan di media penyimpanan online dan masukan link-nya di form yang disediakan</i>
                                             <br> <br>

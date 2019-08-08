@@ -25,7 +25,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 // $config['base_url'] = '//anforcom.if.undip.ac.id';
 // $config['base_url'] = '//anforcom.com';
-$config['base_url'] = '//localhost/anforcom19';
+// $config['base_url'] = '//localhost/anforcom';
+$config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$config['base_url'] .= "://" . $_SERVER['HTTP_HOST'];
+$config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+
+// Gmail configuration for noreply.anforcomundip@gmail.com to send password reset email
+$config['gmail_name'] = 'No-reply Anforcom Universitas Diponegoro';
+$config['gmail_email'] = 'noreply.anforcomundip@gmail.com';
+$config['gmail_client_id'] = '344766979127-gv9s3bgsjj2l9hmg5ktsn246vdvlpssf.apps.googleusercontent.com';
+$config['gmail_client_secret'] = 'foejwxIW1uNT7zxPj6C5TXQa';
+$config['gmail_refresh_token'] = '1/EkACPVdgABT1ojneLM9gbFpfkvxGpG-RZXXcM3baq3s';
 
 /*
 |--------------------------------------------------------------------------
@@ -138,7 +148,7 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
+$config['composer_autoload'] = 'vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------

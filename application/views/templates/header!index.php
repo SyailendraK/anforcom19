@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>summernote.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-
-
 
 </head>
 
@@ -47,9 +44,6 @@
                     <li class="nav-item">
                         <a class="nav-link" style="color:#DB9200;" href=<?php echo site_url('login');?>>Log In</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <p class="nav-link m-0" style="color:#black;">Daftar</p>
-                    </li> -->
                 <?php endif ?>
                 <?php if($this->session->userdata('logged_in'))  : ?>
                     <li class="nav-item">

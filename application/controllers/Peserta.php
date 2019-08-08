@@ -4,9 +4,10 @@
       if($this->session->userdata('logged_in')){
         redirect('index');
       }
-
+      $this->load->view('templates/header!index');
       $this->load->view('peserta/register');
-      $this->load->view('templates/footer');
+      $data['ajax'] = 'peserta/ajax';
+      $this->load->view('templates/footer',$data);
     }
 
     public function login(){
@@ -25,6 +26,81 @@
       $this->load->view('peserta/forget');
     }
 
+    public function forget_password(){
+      if($this->session->userdata('logged_in')){
+        redirect('index');
+      }
+
+	  $this->form_validation->set_rules('email', 'E-mail', 'required');
+
+	  if ($this->form_validation->run() === FALSE) {
+		  $this->load->view('peserta/forget');
+	  }
+
+	  $email = $this->input->post('email');
+
+	  $peserta = $this->Peserta_model->get_by_email($email);
+
+	  if (! $peserta) {
+	      $this->load->view('peserta/forget');
+	  } else {
+		  $reset_token = $this->Peserta_model->create_password_reset_token($peserta->id);
+		  $link = base_url() . 'resetpassword/' . $reset_token;
+
+		  $client_id = $this->config->item('gmail_client_id');
+		  $client_secret = $this->config->item('gmail_client_secret');
+		  $refresh_token = $this->config->item('gmail_refresh_token');
+		  $from = $this->config->item('gmail_email');
+		  $fromname = $this->config->item('gmail_name');
+
+		  $this->load->library('mailer', compact('client_id', 'client_secret', 'refresh_token', 'from', 'fromname'));
+
+		  $subject = 'Reset Password Akun Anforcom Universitas Diponegoro';
+		  $content = $this->load->view('peserta/forget_email', compact('link') ,true);
+
+		  $this->mailer->send($peserta->email_ketua, $peserta->nama_ketua, $subject, $content);
+
+		  $this->load->view('peserta/forget_check_email');
+	  }
+    }
+
+	public function reset_password($token) {
+		$peserta = $this->Peserta_model->get_by_reset_token($token);
+
+		if (! $peserta) {
+			echo 'Tautan yang Anda miliki tidak valid. Masuk ke halaman reset password untuk mendapatkan link terbaru';
+		} else {
+			$now = new DateTime('now', new DateTimeZone('Asia/Jakarta'));
+			$expire = new DateTime($peserta->password_reset_expire, new DateTimeZone('Asia/Jakarta'));
+
+			if ($now > $expire) {
+				echo 'Tautan yang Anda miliki sudah kadaluarsa. Masuk ke halaman reset password untuk mendapatkan link terbaru';
+			} else {
+				$this->load->view('peserta/reset_password', compact('token'));
+			}
+		}
+	}
+
+	public function update_password($token) {
+		$peserta = $this->Peserta_model->get_by_reset_token($token);
+
+		if (! $peserta) {
+			echo 'Tautan yang Anda miliki tidak valid. Masuk ke halaman reset password untuk mendapatkan link terbaru';
+		} else {
+			$password = $this->input->post('password');
+			$password_confirmation = $this->input->post('password_confirmation');
+
+			if ($password != $password_confirmation) {
+				$this->load->view('peserta/reset_password');
+			} else {
+				$this->Peserta_model->change_password($peserta->id, $password);
+
+				$login_link = base_url() . 'login';
+				echo 'Password diubah, Anda bisa <a href="'. $login_link . '">Login</a>';
+			}
+		}
+	}
+
     public function team(){
       if(!$this->session->userdata('logged_in')){
         redirect('peserta/login');
@@ -33,7 +109,7 @@
       $data['team'] = $this->Peserta_model->get_peserta($this->session->userdata('user_id'));
 
       $this->load->view('templates/header!index');
-      $this->load->view('peserta/team',$data);
+      $this->load->view('peserta/team_openregis',$data);
       $this->load->view('templates/footer');
     }
 
@@ -85,8 +161,19 @@
         }
 
         $this->Peserta_model->create_peserta($ktm_ketua,$ktm_anggota1,$ktm_anggota2);
-        redirect('index');
+        //cek jika berhasil daftar auto login
+        if($this->db->affected_rows()){
+          $email = $this->input->post('email_ketua');
+          $password = $this->input->post('password');
+          $peserta_id = $this->Peserta_model->login($email, $password);
+          $user_data = array(
+            'user_id' => $peserta_id,
+            'logged_in' => TRUE
+          );
 
+          $this->session->set_userdata($user_data);
+          redirect('peserta/team');
+        }
       }
     }
 
@@ -169,7 +256,7 @@
           );
 
           $this->session->set_userdata($user_data);
-          
+
           redirect('peserta/team');
         } else {
           redirect('login');
@@ -182,7 +269,7 @@
       if(!$this->session->userdata('logged_in')){
         redirect('index');
       }
-      
+
       $this->session->unset_userdata('logged_in');
       $this->session->unset_userdata('user_id');
 

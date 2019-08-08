@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Anforcom 2018</title>
+    <title>Anforcom 2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="<?= base_url('assets/img/'); ?>LOGO.png"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>cs.css?d=<?php echo time(); ?>">
@@ -20,7 +20,7 @@
             <img id="logoav" class="mt-4" width="280" src="<?= base_url('assets/img/'); ?>LOGO.png" alt="av">
             <div class="d-flex justify-content-center mt-3">
                 <h4><strong class="px-1 mr-1" style="background-color:#f2f2f2;color:#09233e;">ANFORCOM</strong></h4>
-                <h4 style="color:#d69b11;"><strong>2018</strong></h4>
+                <h4 style="color:#d69b11;"><strong>2019</strong></h4>
             </div>
             <button type="button" class="btn btn-outline-light my-4" data-toggle="modal" data-target="#trailerAV">LIHAT TRAILER</button>
 
@@ -41,7 +41,7 @@
                 <a class="mx-2" href="https://www.facebook.com/Anforcom/" target="_blank"><img width="25px" src="<?= base_url('assets/img/'); ?>fb.png"></a>
                 <a class="mx-2" href="https://www.instagram.com/anforcom/" target="_blank"><img width="25px" src="<?= base_url('assets/img/'); ?>insta.png"></a>
                 <a class="mx-2" href="http://line.me/ti/p/~@gsy5063l"><img width="25px" src="<?= base_url('assets/img/'); ?>line.png"></a>
-                <a class="mx-2" href="https://twitter.com/anforcom" target="_blank"><img width="25px" src="<?= base_url('assets/img/'); ?>twi.png"></a> 
+                <a class="mx-2" href="https://twitter.com/anforcom" target="_blank"><img width="25px" src="<?= base_url('assets/img/'); ?>twi.png"></a>
             </div>
         </div>
     </section>

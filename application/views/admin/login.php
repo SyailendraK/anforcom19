@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Anforcom 2018</title>
+    <title>Anforcom 2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>login.css?d=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>bootstrap.css">
@@ -21,7 +21,7 @@
             </div>
                 <h5>Selamat Datang di Login Admin</h5>
                 <?php echo form_open('adminAV18/login_admin') ?>
-       
+
                 <div class="form-group" align="left">
                     <label for="">id : </label>
                     <input autofocus="" required class="form-control field-login" type="email" name="email" value="">

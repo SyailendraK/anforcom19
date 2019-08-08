@@ -20,9 +20,9 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="300">
 
-    <nav id="navigasi" class="navbar fixed-top navbar-expand-md navbar-dark navbar-hide">
+    <nav id="navigasi" class="navbar fixed-top navbar-expand-md navbar-dark">
         <a class="navbar-brand pt-0" href="<?= base_url(); ?>"><img height="25" src="<?= base_url('assets/img/') ?>LOGO+NAME.png" alt=""></a>
-        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation" type="button" data-target="#navbar" data-toggle="collapse">
+        <button class="navbar-toggler collapsed" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation" type="button" data-target="#navbar" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar">
@@ -44,7 +44,7 @@
                 </li>
                 <?php if(!$this->session->userdata('logged_in'))  : ?>
                     <li class="nav-item">
-                        <a class="nav-link" style="color:#DB9200;" href=<?php echo site_url('login');?>>Log In</a>
+                        <a class="nav-link" style="color:#DB9200;" href=<?php echo site_url('login');?>>Log In / Register</a>
                     </li>
                     <!-- <li class="nav-item">
                         <p class="nav-link m-0" style="color:#black;">Daftar</p>

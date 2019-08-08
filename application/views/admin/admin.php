@@ -66,7 +66,7 @@
                                 <th scope="row"><?php echo $team['id'] ?></th>
                                 <td>
                                     <a href="<?php echo site_url('/adminAV18/view_profile/'.$team['id'])?>">
-                                        <?php echo $team['nama_tim'] ?>                                
+                                        <?php echo $team['nama_tim'] ?>
                                     </a>
                                 </td>
                                 <td><?php echo $team['nama_pt'] ?></td>
@@ -145,7 +145,7 @@
                                     </form> -->
                                 </td>
                             </tr>
-                            <?php $x++ ?>                   
+                            <?php $x++ ?>
                         <?php endforeach ?>
                     </tbody>
                 </table>
@@ -197,7 +197,7 @@
             </div>
 
         </div>
-                        
+
 </section>
 
 
